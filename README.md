@@ -13,7 +13,7 @@
 ## Hacker Challenge
 
 
-🪳 [Report Bugz](https://github.com/seraph776/sql-injection-hacker-challenge/issues/new) · 📫 [Contact me](#contact-me) · ☕[Buy me Coffee](https://www.buymeacoffee.com/seraph776) 
+🐛 [Report Bugz](https://github.com/seraph776/sql-injection-hacker-challenge/issues/new?assignees=seraph776&labels=bug&template=bug-report---.md&title=Report+a+Bug) · 📫 [Contact me](#contact-me) · ☕[Buy me Coffee](https://www.buymeacoffee.com/seraph776) 
 
 Show your support and give this repo a 💫 
 
