@@ -8,7 +8,9 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/seraph776/sql-injection-hacker-challenge?color=red&style=for-the-badge&labelColor=grey&label=issues&logo=github)
 ![GitHub](https://img.shields.io/github/license/seraph776/sql-injection-hacker-challenge?color=blue&style=for-the-badge&labelColor=grey&label=License)
 
-<img src="https://user-images.githubusercontent.com/72005563/187284183-d3ad7970-401f-48f9-899a-44288c8897cc.png" width="375"/> 
+<img src="https://user-images.githubusercontent.com/72005563/187315379-005a9c12-3f37-4bdb-b70d-66254fd4837b.png" width="675"/> 
+
+
 
 ## Hacker Challenge
 
