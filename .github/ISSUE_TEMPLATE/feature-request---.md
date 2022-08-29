@@ -8,10 +8,10 @@ assignees: seraph776
 ---
 
 ## Initial checklist
-- [ ] I read the [support docs](https://github.com/seraph776/sql-injection-hacker-challenege/blob/main/SUPPORT.md) *
-- [ ] I read the [contributing guide](https://github.com/seraph776/sql-injection-hacker-challenege/blob/main/CONTRIBUTING.md) *
-- [ ] I agree to follow the [code of conduct](https://github.com/seraph776/sql-injection-hacker-challenege/blob/main/CODE-OF-CONDUCT.md) *
-- [ ] I searched [issues](https://github.com/seraph776/sql-injection-hacker-challenege/issues) and couldn’t find anything (or linked relevant results below) *
+- [ ] I read the [support docs](https://github.com/seraph776/sql-injection-hacker-challenge/blob/main/SUPPORT.md) *
+- [ ] I read the [contributing guide](https://github.com/seraph776/sql-injection-hacker-challenge/blob/main/CONTRIBUTING.md) *
+- [ ] I agree to follow the [code of conduct](https://github.com/seraph776/sql-injection-hacker-challenge/blob/main/CODE-OF-CONDUCT.md) *
+- [ ] I searched [issues](https://github.com/seraph776/sql-injection-hacker-challenge/issues) and couldn’t find anything (or linked relevant results below) *
 
 ## Please describe what issue(s) will your feature proposal will solve?
 (_Write a clear and concise description of what the problem is_)
