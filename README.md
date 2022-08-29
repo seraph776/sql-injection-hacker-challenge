@@ -100,7 +100,7 @@ $ pipenv run python app/script.py
 
 ## Usage
 Once you run the script, you will be prompted to `"Enter you SQL Injection"`. Keep trying until you successfully achieve a SQL Injection attack! 
-For more information read [documentation](https://github.com/seraph776/sql-injection-attack-challenege/wiki).
+For more information read [documentation](https://github.com/seraph776/sql-injection-hacker-challenege/wiki).
 
 ## Reporting Issues
 
