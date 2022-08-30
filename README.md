@@ -1,6 +1,6 @@
 <div id="top" align="center">
 
-# SQL Injection 
+# SQL Injection 💉
 
 ![made-with-Python](https://img.shields.io/badge/Python-blue?&logo=python&logoColor=yellow&label=Built%20with&style=for-the-badge&labelColor=grey)
 ![GitHub Repo stars](https://img.shields.io/github/stars/seraph776/sql-injection-hacker-challenge?color=yellow&style=for-the-badge&labelColor=grey&label=stars&logo=github)
@@ -12,8 +12,7 @@
 
 
 
-## Hacker Challenge
-
+### HACK3R Challenge!
 
 🐛 [Report Bugz](https://github.com/seraph776/sql-injection-hacker-challenge/issues/new?assignees=seraph776&labels=bug&template=bug-report---.md&title=Report+a+Bug) · 📫 [Contact me](#contact-me) · ☕[Buy me Coffee](https://www.buymeacoffee.com/seraph776) 
 
@@ -40,7 +39,7 @@ Show your support and give this repo a 💫
 
 ## 💡Overview
 
-A `SQL injection` is a type of cybersecurity attack that targets data-driven applications by inserting or "injecting" malicious SQL statements in the input field of a web page. Run this script, and try to execute a SQL Injection attack on a mock database that was designed for this challenge. If successful, you’ll have an opportunity to answer some fun **Bonus Challenge Questions**.
+`SQL injection` is a type of cybersecurity attack that targets data-driven applications by inserting or "injecting" malicious SQL statements in the input field of a web page. Run this script, and try to execute a SQL Injection attack on a mock database that was designed for this challenge. If successful, you’ll have an opportunity to answer some fun **Bonus Challenge Questions**.
 
 ### 💥 Bonus Challenge Questions
 
@@ -50,13 +49,13 @@ After succefully dumping the database, try solving the following Bonus Questions
 2. What 1995 `"crime/action/romance`" movie did these `users` played in? **Hint**: _Solve the first bonus question._
 
 
-## ⚙️ Requirements
+## Requirements
 
 | Required | Version  |
 | -------- | -------- |
 | Python   | 3.0 +    |
-| sqlite3  | 3.39.2   |
-| requests | 2.28.1   |
+| sqlite3  | 3.39.2   | 
+| requests | 2.28.1   | 
 
 
 
