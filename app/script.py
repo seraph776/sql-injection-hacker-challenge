@@ -51,6 +51,7 @@ while True:
                 for row in results:
                     print(row)
             conn.close()
+            break
     except sqlite3.OperationalError as e:
         print("\n\033[91m" + "Nope, try again!" + "\033[0m")
         pass
