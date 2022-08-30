@@ -26,12 +26,11 @@ Show your support and give this repo a 💫
  
  1. [Overview](#overview)
  2. [Requirements](#requirements)
- 3. [Screenshot](#screenshot)
- 3. [Demo](#demo)
- 4. [Setup Instructions](#setup-instructions)
- 5. [Installation](#installation)
- 6. [Usage](#usage)
- 7. [How to Contribute](#how-to-contribute)
+ 3. [Source Code](#source-code)
+ 4. [Screenshot](#screenshot)
+ 5. [Demonstration](#demonstration)
+ 6. [Setup Instructions](#setup-instructions)
+ 7. [Usage](#usage)
  8. [Discussions](#discussions)
  9. [Contact me](#contact-me)
  10. [License](#license)
@@ -43,7 +42,7 @@ Show your support and give this repo a 💫
 
 A `SQL injection` is a type of cybersecurity attack that targets data-driven applications by inserting or "injecting" malicious SQL statements in the input field of a web page. Run this script, and try to execute a SQL Injection attack on a mock database that was designed for this challenge. If successful, you’ll have an opportunity to answer some fun **Bonus Challenge Questions**.
 
-### 💥 Bonus Challeng Questions
+### 💥 Bonus Challenge Questions
 
 After succefully dumping the database, try solving the following Bonus Questions:
 
@@ -51,7 +50,7 @@ After succefully dumping the database, try solving the following Bonus Questions
 2. What 1995 `"crime/action/romance`" movie did these `users` played in? **Hint**: _Solve the first bonus question._
 
 
-## Requirements
+## ⚙️ Requirements
 
 | Required | Version  |
 | -------- | -------- |
@@ -60,12 +59,75 @@ After succefully dumping the database, try solving the following Bonus Questions
 | requests | 2.28.1   |
 
 
+
+## Source Code
+
+<details>
+<summary> Click to view source code </summary>
+
+```python
+
+
+import sqlite3
+import requests
+
+# SQL statements:
+CREATE_USERS_TABLE = "CREATE TABLE IF NOT EXISTS usernames (id INTEGER PRIMARY KEY, username TEXT, password TEXT);"
+INSERT_USER_DATA = "INSERT INTO usernames (username, password) VALUES (?, ?)"
+
+
+def get_userdata() -> list:
+    """Returns username, and password in tuple from online username.dat file."""
+    # url to username and password file
+    URL = "https://pastebin.com/raw/ih7szSSv"
+    raw = [i.strip() for i in requests.get(URL).text.split('\n')]
+    output = []
+    for i in raw:
+        users = i.split(', ')[0].split(',')[0]
+        passwords = i.split(', ')[0].split(',')[1]
+        output.append((users, passwords))
+    return output
+
+
+# Create database in memory
+conn = sqlite3.connect(":memory:")
+# Get usernames and passwords
+user_data = get_userdata()
+
+# Create table
+conn.execute(CREATE_USERS_TABLE)
+# Insert username, passwords into database
+conn.executemany(INSERT_USER_DATA, user_data)
+
+
+while True:
+    INJECTION = input("Enter your SQL Injection:\n>  ")
+    sql = f"SELECT * FROM usernames WHERE id = 776 {INJECTION}"
+    try:
+        results = conn.execute(sql).fetchall()
+        if results:
+            print(f"\n\033[92m" + "Good job, you did it!" + "\033[0m")
+            with conn:
+                for row in results:
+                    print(row)
+            conn.close()
+            break
+    except sqlite3.OperationalError as e:
+        print("\n\033[91m" + "Nope, try again!" + "\033[0m")
+        pass
+
+
+```
+</details>
+
+
+
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/72005563/187289535-bed7a69d-965c-4a79-b317-2f1295705217.png)
 
 
-## Demo
+## Demonstration
 [![Replit Demo](https://img.shields.io/badge/Demo-blue?&logo=replit&logoColor=white&label=Replit&style=for-the-badge&labelColor=grey)](https://replit.com/@seraph776/SQL-Injection-Hacker-Challenge)
 
 
